@@ -11,8 +11,8 @@
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
-{% if article.jump %}
-<meta http-equiv="refresh" content="0;URL={{ article.jump}}" />
+{% if article.redirect %}
+<meta http-equiv="refresh" content="0;URL={{ article.redirect}}" />
 {% endif %}
 {{ super() }}
 {% if article.tags or article.category or article.keywords %}
@@ -84,6 +84,7 @@
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
+            {% include '_includes/post_stats.html' %}
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
@@ -108,6 +109,7 @@
             {% endif %}
             {% include '_includes/social_links.html' %}
             {% include '_includes/mailchimp.html' %}
+            {% include '_includes/freelists.html' %}
         </div>
         </section>
 </div>

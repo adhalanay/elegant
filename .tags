@@ -1,0 +1,132 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARTICLE_URL	tests/pelicanconf.py	/^ARTICLE_URL = u'{slug}'$/;"	v
+AUTHOR	tests/pelicanconf.py	/^AUTHOR = u'Pelican Elegant Team'$/;"	v
+AUTHOR_FEED_ATOM	tests/pelicanconf.py	/^AUTHOR_FEED_ATOM = None$/;"	v
+AUTHOR_FEED_RSS	tests/pelicanconf.py	/^AUTHOR_FEED_RSS = None$/;"	v
+AUTHOR_SAVE_AS	tests/pelicanconf.py	/^AUTHOR_SAVE_AS = ''$/;"	v
+BASEDIR	tests/Makefile	/^BASEDIR=$(CURDIR)$/;"	m
+CATEGORY_FEED_ATOM	tests/pelicanconf.py	/^CATEGORY_FEED_ATOM = None$/;"	v
+CATEGORY_FEED_RSS	tests/pelicanconf.py	/^CATEGORY_FEED_RSS = None$/;"	v
+CATEGORY_SAVE_AS	tests/pelicanconf.py	/^CATEGORY_SAVE_AS = ''$/;"	v
+CLAIM_BING	tests/pelicanconf.py	/^CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"$/;"	v
+CLAIM_GOOGLE	tests/pelicanconf.py	/^CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"$/;"	v
+CLOUDFILES_API_KEY	tests/Makefile	/^CLOUDFILES_API_KEY=my_rackspace_api_key$/;"	m
+CLOUDFILES_CONTAINER	tests/Makefile	/^CLOUDFILES_CONTAINER=my_cloudfiles_container$/;"	m
+CLOUDFILES_USERNAME	tests/Makefile	/^CLOUDFILES_USERNAME=my_rackspace_username$/;"	m
+COMMENTS_INTRO	tests/pelicanconf.py	/^COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part unclear? Leave your comments below.'$/;"	v
+CONFFILE	tests/Makefile	/^CONFFILE=$(BASEDIR)\/pelicanconf.py$/;"	m
+DATE_FORMATS	tests/pelicanconf.py	/^DATE_FORMATS = {'en': '%b %d, %Y'}$/;"	v
+DEBUG	tests/Makefile	/^DEBUG ?= 0$/;"	m
+DEFAULT_CATEGORY	tests/pelicanconf.py	/^DEFAULT_CATEGORY = 'Miscellaneous'$/;"	v
+DEFAULT_LANG	tests/pelicanconf.py	/^DEFAULT_LANG = u'en'$/;"	v
+DEFAULT_PAGINATION	tests/pelicanconf.py	/^DEFAULT_PAGINATION = False$/;"	v
+DELETE_OUTPUT_DIRECTORY	tests/publishconf.py	/^DELETE_OUTPUT_DIRECTORY = False$/;"	v
+DEPLOY_PATH	tests/fabfile.py	/^DEPLOY_PATH = env.deploy_path$/;"	v
+DIRECT_TEMPLATES	tests/pelicanconf.py	/^DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))$/;"	v
+DROPBOX_DIR	tests/Makefile	/^DROPBOX_DIR=~\/Dropbox\/Public\/$/;"	m
+EMAIL_FIELD_PLACEHOLDER	tests/pelicanconf.py	/^EMAIL_FIELD_PLACEHOLDER = u'Enter your email...'$/;"	v
+EMAIL_SUBSCRIPTION_LABEL	tests/pelicanconf.py	/^EMAIL_SUBSCRIPTION_LABEL = u'Get Monthly Updates'$/;"	v
+EXTRA_PATH_METADATA	tests/pelicanconf.py	/^EXTRA_PATH_METADATA = {$/;"	v
+FEATURED_IMAGE	tests/pelicanconf.py	/^FEATURED_IMAGE = SITEURL + '\/theme\/images\/apple-touch-icon-152x152.png'$/;"	v
+FTP_HOST	tests/Makefile	/^FTP_HOST=localhost$/;"	m
+FTP_TARGET_DIR	tests/Makefile	/^FTP_TARGET_DIR=\/$/;"	m
+FTP_USER	tests/Makefile	/^FTP_USER=anonymous$/;"	m
+GITHUB_PAGES_BRANCH	tests/Makefile	/^GITHUB_PAGES_BRANCH=master$/;"	m
+INPUTDIR	tests/Makefile	/^INPUTDIR=$(BASEDIR)\/content$/;"	m
+LANDING_PAGE_ABOUT	tests/pelicanconf.py	/^LANDING_PAGE_ABOUT = {$/;"	v
+MAILCHIMP_FORM_ACTION	tests/pelicanconf.py	/^MAILCHIMP_FORM_ACTION = u'empty'$/;"	v
+MARKDOWN	tests/pelicanconf.py	/^MARKDOWN = {$/;"	v
+OUTPUTDIR	tests/Makefile	/^OUTPUTDIR=$(BASEDIR)\/output$/;"	m
+PAGE_SAVE_AS	tests/pelicanconf.py	/^PAGE_SAVE_AS = u'{slug}.html'$/;"	v
+PAGE_URL	tests/pelicanconf.py	/^PAGE_URL = u'{slug}'$/;"	v
+PELICAN	tests/Makefile	/^PELICAN=pelican$/;"	m
+PELICANOPTS	tests/Makefile	/^PELICANOPTS=$/;"	m
+PLUGINS	tests/pelicanconf.py	/^PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img',$/;"	v
+PLUGIN_PATHS	tests/pelicanconf.py	/^PLUGIN_PATHS = ['plugins\/']$/;"	v
+PROJECTS	tests/pelicanconf.py	/^PROJECTS = [$/;"	v
+PUBLISHCONF	tests/Makefile	/^PUBLISHCONF=$(BASEDIR)\/publishconf.py$/;"	m
+PY	tests/Makefile	/^PY=python$/;"	m
+RELATED_POSTS_LABEL	tests/pelicanconf.py	/^RELATED_POSTS_LABEL = 'Keep Reading'$/;"	v
+RELATIVE_URLS	tests/publishconf.py	/^RELATIVE_URLS = False$/;"	v
+Related	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_related = {'Related': [$/;"	p	class:tipuesearch_related
+S3_BUCKET	tests/Makefile	/^S3_BUCKET=my_s3_bucket$/;"	m
+SHARE_POST_INTRO	tests/pelicanconf.py	/^SHARE_POST_INTRO = 'Like this post? Share on:'$/;"	v
+SITEMAP	tests/pelicanconf.py	/^SITEMAP = {$/;"	v
+SITENAME	tests/pelicanconf.py	/^SITENAME = u"Elegant Documentation"$/;"	v
+SITEURL	tests/pelicanconf.py	/^SITEURL = '\/'$/;"	v
+SITEURL	tests/publishconf.py	/^SITEURL = 'https:\/\/pelican-elegant.github.io'$/;"	v
+SITE_DESCRIPTION	tests/pelicanconf.py	/^SITE_DESCRIPTION = u'Documentation website for Pelican-Elegant theme originally created by Talha Mansoor'$/;"	v
+SOCIAL	tests/pelicanconf.py	/^SOCIAL = (('Github', 'https:\/\/github.com\/Pelican-Elegant\/'), ('RSS', SITEURL + '\/feeds\/all.atom.xml'))$/;"	v
+SOCIAL	tests/publishconf.py	/^SOCIAL = (('Github', 'https:\/\/github.com\/Pelican-Elegant\/'), ('RSS', SITEURL + '\/feeds\/all.atom.xml'))$/;"	v
+SOCIAL_PROFILE_LABEL	tests/pelicanconf.py	/^SOCIAL_PROFILE_LABEL = u'Stay in Touch'$/;"	v
+SSH_HOST	tests/Makefile	/^SSH_HOST=localhost$/;"	m
+SSH_PORT	tests/Makefile	/^SSH_PORT=22$/;"	m
+SSH_TARGET_DIR	tests/Makefile	/^SSH_TARGET_DIR=\/var\/www$/;"	m
+SSH_USER	tests/Makefile	/^SSH_USER=root$/;"	m
+STATIC_PATHS	tests/pelicanconf.py	/^STATIC_PATHS = ['theme\/images', 'images', 'extra\/robots.txt']$/;"	v
+SUBSCRIBE_BUTTON_TITLE	tests/pelicanconf.py	/^SUBSCRIBE_BUTTON_TITLE = u'Send me Free updates'$/;"	v
+TAG_SAVE_AS	tests/pelicanconf.py	/^TAG_SAVE_AS = ''$/;"	v
+THEME	tests/pelicanconf.py	/^THEME = 'themes\/elegant'$/;"	v
+TIMEZONE	tests/pelicanconf.py	/^TIMEZONE = 'Asia\/Karachi'$/;"	v
+TWITTER_USERNAME	tests/pelicanconf.py	/^TWITTER_USERNAME = u''$/;"	v
+TYPOGRIFY	tests/pelicanconf.py	/^TYPOGRIFY = True$/;"	v
+Travis	tests/trigger-build.js	/^var Travis = require('travis-ci');$/;"	v
+USE_FOLDER_AS_CATEGORY	tests/pelicanconf.py	/^USE_FOLDER_AS_CATEGORY = False$/;"	v
+USE_SHORTCUT_ICONS	tests/pelicanconf.py	/^USE_SHORTCUT_ICONS = True$/;"	v
+alive	tests/develop_server.sh	/^function alive() {$/;"	f
+build	tests/fabfile.py	/^def build():$/;"	f
+cf_upload	tests/fabfile.py	/^def cf_upload():$/;"	f
+clean	tests/fabfile.py	/^def clean():$/;"	f
+dest_path	tests/fabfile.py	/^dest_path = '\/var\/www'$/;"	v
+filename	setup.py	/^filename = 'setup.cfg'$/;"	v
+fn.tipuesearch	static/tipuesearch/tipuesearch.js	/^(function($) {$/;"	f
+fn.tipuesearch	static/tipuesearch/tipuesearch.min.js	/^(function($){$.fn.tipuesearch=function(options){var set=$.extend({'contextBuffer':60,'contextLength':60,'contextStart':90,'debug':false,'descriptiveWords':25,'footerPages':3,'highlightTerms':true,'imageZoom':true,'minimumLength':3,'newWindow':false,'show':10,'showContext':true,'showRelated':true,'showTime':true,'showTitleCount':true,'showURL':true,'wholeWords':true},options);return this.each(function(){var tipuesearch_t_c=0;var tipue_search_w='';if(set.newWindow)$/;"	f
+line	setup.py	/^line = ""$/;"	v
+listFilter	templates/tags.html	/^        function listFilter() {$/;"	f
+numbers	setup.py	/^numbers = [str(x) for x in t]$/;"	v
+pages	static/tipuesearch/tipuesearch_content.js	/^var tipuesearch = {"pages": [$/;"	p	class:tipuesearch
+preview	tests/fabfile.py	/^def preview():$/;"	f
+production	tests/fabfile.py	/^production = 'root@localhost:22'$/;"	v
+publish	tests/fabfile.py	/^def publish():$/;"	f
+rebuild	tests/fabfile.py	/^def rebuild():$/;"	f
+regenerate	tests/fabfile.py	/^def regenerate():$/;"	f
+regexp	setup.py	/^regexp = '\\Aversion.*([0-9]+)'$/;"	v
+repo	tests/trigger-build.js	/^var repo = "Pelican-Elegant\/documentation";$/;"	v
+reserve	tests/fabfile.py	/^def reserve():$/;"	f
+serve	tests/fabfile.py	/^def serve():$/;"	f
+shut_down	tests/develop_server.sh	/^function shut_down(){$/;"	f
+start_up	tests/develop_server.sh	/^function start_up(){$/;"	f
+strings	setup.py	/^strings = time.strftime("%Y,%m,%d,%H,%M,%S")$/;"	v
+t	setup.py	/^t = strings.split(',')$/;"	v
+tipuesearch_stop_words	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_stop_words = ["a", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "aren't", "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "can't", "cannot", "could", "couldn't", "did", "didn't", "do", "does", "doesn't", "doing", "don't", "down", "during", "each", "few", "for", "from", "further", "had", "hadn't", "has", "hasn't", "have", "haven't", "having", "he", "he'd", "he'll", "he's", "her", "here", "here's", "hers", "herself", "him", "himself", "his", "how", "how's", "i", "i'd", "i'll", "i'm", "i've", "if", "in", "into", "is", "isn't", "it", "it's", "its", "itself", "let's", "me", "more", "most", "mustn't", "my", "myself", "no", "nor", "not", "of", "off", "on", "once", "only", "or", "other", "ought", "our", "ours", "ourselves", "out", "over", "own", "same", "shan't", "she", "she'd", "she'll", "she's", "should", "shouldn't", "so", "some", "such", "than", "that", "that's", "the", "their", "theirs", "them", "themselves", "then", "there", "there's", "these", "they", "they'd", "they'll", "they're", "they've", "this", "those", "through", "to", "too", "under", "until", "up", "very", "was", "wasn't", "we", "we'd", "we'll", "we're", "we've", "were", "weren't", "what", "what's", "when", "when's", "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with", "won't", "would", "wouldn't", "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"];$/;"	v
+tipuesearch_string_1	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_1 = 'No title';$/;"	v
+tipuesearch_string_10	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_10 = 'Related';$/;"	v
+tipuesearch_string_11	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_11 = 'Search should be one character or more.';$/;"	v
+tipuesearch_string_12	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_12 = 'Search should be';$/;"	v
+tipuesearch_string_13	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_13 = 'characters or more.';$/;"	v
+tipuesearch_string_14	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_14 = 'seconds';$/;"	v
+tipuesearch_string_15	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_15 = 'Open Image';$/;"	v
+tipuesearch_string_16	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_16 = 'Goto Page';$/;"	v
+tipuesearch_string_2	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_2 = 'Showing results for';$/;"	v
+tipuesearch_string_3	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_3 = 'Search instead for';$/;"	v
+tipuesearch_string_4	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_4 = '1 result';$/;"	v
+tipuesearch_string_5	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_5 = 'results';$/;"	v
+tipuesearch_string_6	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_6 = '<';$/;"	v
+tipuesearch_string_7	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_7 = '>';$/;"	v
+tipuesearch_string_8	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_8 = 'Nothing found.';$/;"	v
+tipuesearch_string_9	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_string_9 = 'Common words are largely ignored.';$/;"	v
+travis	setup.py	/^    travis = None$/;"	v
+travis	setup.py	/^    travis = os.environ['TRAVIS_JOB_ID']$/;"	v
+uncollapse	templates/_includes/disqus_scripts.html	/^function uncollapse() {$/;"	f
+uncollapse	templates/categories.html	/^    function uncollapse() {$/;"	f
+usage	tests/develop_server.sh	/^function usage(){$/;"	f
+validateForm	templates/base.html	/^            function validateForm(query)$/;"	f
+version	setup.py	/^version = line.split("=")[1].strip()$/;"	v
+weight	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_weight = {'weight': [$/;"	p	class:tipuesearch_weight
+words	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_replace = {'words': [$/;"	p	class:tipuesearch_replace
+words	static/tipuesearch/tipuesearch_set.js	/^var tipuesearch_stem = {'words': [$/;"	p	class:tipuesearch_stem
