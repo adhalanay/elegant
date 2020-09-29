@@ -338,7 +338,7 @@ div.recent-posts-posted {
 }
 /* Index page */
 #allposts {
-  color: var(--mutedTextColor);
+  color: maroon;
   float: right;
   font-size: 75%;
   font-weight: normal;
