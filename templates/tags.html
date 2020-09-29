@@ -12,15 +12,15 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {{ super() }}
 <meta property="og:title" content="All Tags · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="All Tags · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}" />
+{% from '_includes/_defaults.html' import FEATURED_IMAGE, TAGS_URL with context %}
+<meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL }}" />
 <meta property="og:description" content="All tags used in the {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="All tags used in the {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
-{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
-<meta property="og:image" content="{{FEATURED_IMAGE}}" />
-<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
 {% endblock meta_tags_in_head %}
 
@@ -30,10 +30,10 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {% endblock feed_links %}
 
 {% block content %}
-
+{% from '_includes/_defaults.html' import TAGS_URL with context %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}">All Tags</a></h1>
+    <h1><a href="{{ SITEURL }}/{{ TAGS_URL }}">All Tags</a></h1>
     </header>
 </div>
 <div class="row-fluid">
@@ -45,7 +45,7 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
             {% for tag, articles in tags|sort %}
             <li>
             {% set num = articles|count %}
-            <a href="#{{ tag.slug }}-ref">{{ tag }}<span>{{ num }}</span></a>
+            <a href="#{{ tag.slug }}-ref">{{ tag }}<span class="superscript">{{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>
@@ -56,9 +56,21 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
     <div class="span8 offset2">
         {% for tag, articles in tags|sort %}
         <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
-        <ul class="articles-in-tag list-articles-category">
+        <ul class="list-articles-under-tag-category">
             {% for article in articles|sort(reverse = true, attribute = 'date') %}
-            <li itemscope><time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+            <li itemscope>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    {{ article.title }}
+                    {% if article.subtitle %}
+                    <small class="subtitle">
+                        {{ article.subtitle }}
+                    </small>
+                    {% endif %}
+                </a>
+                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                    {{ article.locale_date }}
+                </time>
+            </li>
             {% endfor %}
         </ul>
 

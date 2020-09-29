@@ -1,56 +1,51 @@
-# Copyright (C) 2017, 2018, 2019 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
-
 language: python
 dist: trusty
-sudo: required
 
 python:
-- '3.5'
+- '3.6'
 
 env:
-- TEST_CMD="pelican content/ -o output/"
-- TEST_CMD="pelican content/ -o output/ -s ./publishconf.py"
+- NODE_VERSION="12.13.1"
 
-# prepare and move data for execution
+branches:
+  only:
+  - master
+  - next
+
+addons:
+ apt:
+  packages:
+    - openjdk-8-jre  # install Java8 as required by vnu.jar
+
+cache:
+- pip
+- yarn
+- directories:
+  - $HOME/.cache/pre-commit
 
 before_install:
-- pip install -U pip
-- pip install -U setuptools
-- pip install -r tests/requirements.txt
-- pip install -r tests/test-requirements.txt
-- pip install peru
-- mkdir -p tests/themes/elegant
-- mv templates tests/themes/elegant/
-- mv static tests/themes/elegant/
-- mv documentation/content tests/
-- cd tests && peru sync
-# Above has prepared our environment with the checkout of the commit
-# being tested and has populated the required plugins, etc
+- nvm install $NODE_VERSION
 
-# It moves actual theme in this branch, PR, etc, to the generation folder
+install:
+- pip install -r documentation/requirements.txt
+- pip install -U html5validator
+- pip install -U pre-commit
+- yarn global add yaspeller
+- yarn install
 
+before_script:
+- cd documentation
+- invoke plugins-sync
 
-# Test build commands with devel and production seetings, validate links and spelling on markdown files
 script:
-- $TEST_CMD
-- w3c_validator $(find output/ -name '*.html' -type f)
-- tox
+- pre-commit run --all-files
+- yaspeller --only-errors content/ *.md
+- invoke publish
+- html5validator --root output/
 
-
-# As we host documentation in another repo, we need to trick the make script to store in the new repository
-after_success:
-- rm -rf .git/
-- git init
-- git config user.name "Travis CI"
-- git config user.email "travis@domain.com"
-- git config --global push.default simple
-- git remote add origin https://${TRATOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
-- test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && make github
-- sh .change-branch.sh
-- peru sync
-- git remote remove origin
-- git remote add origin https://${TRATOKEN}@github.com/Pelican-Elegant/next
-- test $TRAVIS_BRANCH = "next" && test $TRAVIS_PULL_REQUEST = "false" && make github
-
-# Above changes our repo branch so it points to website or 'next' website
-# uses peru to force a resync of the theme and pushes website live
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: yarn semantic-release
+  on:
+    branch: master
