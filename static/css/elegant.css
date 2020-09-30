@@ -251,7 +251,7 @@ div.blog-archives time,
 div.recent-posts time,
 ul.list-articles-under-tag-category li time,
 div.recent-posts-posted {
-  color: var(--mutedTextColor);
+  color: maroon;
 }
 @media (max-width: 767px) {
   div.blog-archives h2 {

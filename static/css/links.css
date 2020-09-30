@@ -34,7 +34,7 @@ article
   }
 }
 div.recent-posts-posted a {
-  color: inherit;
+  color: maroon;
   padding-left: 0.3em;
   &:hover {
     border-bottom: 1px dashed;
